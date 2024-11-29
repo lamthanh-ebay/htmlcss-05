@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    /* font-family: "Inter", sans-serif; */
+}
+
+/* Common */
+:root {
+    --primary-color: #7264d6;
+    --second-color: #212832;
+
+    --text-color: #696d76;
+    --text-heading-color: #212832;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+input,
+select,
+button,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.btn {
+    --height: 58px;
+
+    min-width: 149px;
+    height: var(--height);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+    color: #fff;
+    line-height: var(--height);
+    background-color: var(--second-color);
+    transition: opacity linear 0.15s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--text-heading-color);
+}
+
+.section-heading-h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.section-heading-h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.section-desc {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    line-height: 1.66;
+}
