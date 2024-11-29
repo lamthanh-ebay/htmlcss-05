@@ -88,3 +88,79 @@ h4 {
     font-size: 1.8rem;
     line-height: 1.66;
 }
+
+/* Header */
+.header {
+    position: sticky;
+    top: -34px;
+    padding: 42px 0 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    width: 102.68px;
+    height: 24px;
+}
+
+/* Nav bar */
+.nav-bar {
+    margin-left: 70px;
+}
+
+.nav-bar__list {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+.nav-bar__item {
+}
+
+.nav-bar__item-link {
+    padding-bottom: 4px;
+    color: var(--text-color);
+    line-height: 1.75;
+}
+
+.nav-bar__item-link:hover,
+.nav-bar__item-link--active {
+    position: relative;
+    color: var(--text-heading-color);
+    text-shadow: -0.1px -0.1px 0 currentColor, 0.1px 0.1px 0 currentColor;
+}
+
+.nav-bar__item-link:hover::after,
+.nav-bar__item-link--active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 98%;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #7264d6;
+}
+
+/* Header CTA */
+.header-cta {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+}
+
+.header-cta__link {
+    color: var(--text-heading-color);
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.header-cta__btn {
+}
