@@ -163,4 +163,6 @@ h4 {
 }
 
 .header-cta__btn {
+    --height: 52px;
+    min-width: 113px;
 }
