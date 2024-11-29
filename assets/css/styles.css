@@ -71,6 +71,22 @@ h4 {
     color: var(--text-heading-color);
 }
 
+.section-title {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    color: #696d77;
+    line-height: 1.75;
+}
+
+.section-title::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background-color: currentColor;
+}
+
 .section-heading-h1 {
     font-size: 6rem;
     font-weight: 700;
@@ -93,8 +109,10 @@ h4 {
 .header {
     position: sticky;
     top: -34px;
+    z-index: 1;
     padding: 42px 0 8px;
     border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
 }
 
 .header-wrap {
@@ -165,4 +183,407 @@ h4 {
 .header-cta__btn {
     --height: 52px;
     min-width: 113px;
+}
+
+/* Hero */
+.hero {
+    padding: 68px 0 80px;
+}
+
+.hero-wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 160px;
+}
+
+/* Hero content */
+.hero-content {
+}
+
+.hero-content__title {
+}
+
+.hero-content__heading {
+    margin-top: 12px;
+    width: 500px;
+}
+
+.hero-content__heading-span {
+    color: #7264d6;
+}
+
+.hero-content__desc {
+    margin-top: 20px;
+    width: 540px;
+}
+
+.form-email__sub {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 540px;
+    height: 74px;
+    padding: 0 8px 0 23px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.form-email__sub--input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.form-email__sub--input::placeholder {
+    color: var(--text-color);
+    line-height: 1.75;
+}
+
+.form-email__sub--btn {
+    background-color: #7264d6;
+    cursor: pointer;
+}
+
+.form-email__sub--note {
+    margin-top: 20px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+}
+
+/* Hero media */
+.hero-media {
+}
+
+/* Phone */
+.phone {
+    position: relative;
+    min-width: 296px;
+    padding: 40px 11px 30px;
+    border-radius: 40px;
+    border: 12px solid var(--second-color);
+    background: #fff;
+}
+
+.phone::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 144px;
+    height: 36px;
+    border-radius: 0px 0px 18px 18px;
+    background: #3c2f60;
+}
+
+/* Phone card */
+.phone-card {
+    width: 250px;
+    position: relative;
+    padding: 16px;
+    border-radius: 20px;
+    background: linear-gradient(76deg, #8679e4 11.52%, #7264d6 70.78%);
+    overflow: hidden;
+}
+
+.phone-card__main-balance {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.phone-card__main-balance::before,
+.phone-card__main-balance-icon-1::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.phone-card__main-balance::before {
+    background-color: #feef65;
+    right: 0;
+}
+
+.phone-card__main-balance-icon-1 {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fe6565;
+    overflow: hidden;
+}
+
+.phone-card__main-balance-icon-1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -16px;
+    background-color: #ffb228;
+}
+
+.phone-card__main-balance-text {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+.phone-card__main-balance-number {
+    margin-top: 2px;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.phone-card-info {
+    position: relative;
+    z-index: 1;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: flex-start;
+    gap: 5px 12px;
+}
+
+.phone-card-info__text {
+    color: #fff;
+}
+
+.phone-card-info__text:nth-child(1),
+.phone-card-info__text:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+}
+
+.phone-card-info__text:nth-child(3),
+.phone-card-info__text:nth-child(4) {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+.phone-card-info__decor {
+    position: absolute;
+}
+
+.phone-card-info__decor:nth-of-type(1) {
+    top: 0;
+    left: 0;
+}
+
+.phone-card-info__decor:nth-of-type(2) {
+    right: 0;
+    bottom: 0;
+}
+
+/* Phone Transactions */
+.phone-transactions {
+    margin-top: 24px;
+}
+
+/* Phone transaction top */
+.phone-transaction__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone-transaction__top-title {
+    color: #31456a;
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+
+.phone-transaction__top-icons {
+    width: 14px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone-transaction__top-icon {
+    width: 100%;
+    height: 2px;
+    border-radius: 99px;
+    background-color: #31456a;
+}
+
+.phone-transaction__top-icon:nth-child(2) {
+    width: 57.14%;
+}
+
+.phone-transaction__top-icon:nth-child(3) {
+    width: 28.57%;
+}
+
+/* Phone transaction body */
+.phone-transaction__body {
+}
+
+.phone-transaction__history {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.phone-transaction__history-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+    border-radius: 8px;
+    background-color: #edf8fc;
+}
+
+.phone-transaction__history:nth-child(2) .phone-transaction__history-media {
+    background-color: #fbefef;
+}
+
+.phone-transaction__history:nth-child(3) .phone-transaction__history-media {
+    background-color: #ecf5f4;
+}
+
+.phone-transaction__history:nth-child(4) .phone-transaction__history-media {
+    background-color: #f1effb;
+}
+
+.phone-transaction__history-media-icon {
+}
+
+.phone-transaction__history-content {
+    flex-grow: 1;
+}
+
+.phone-transaction__history-content-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.phone-transaction__history-content-row:nth-child(1) {
+    color: var(--text-heading-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.phone-transaction__history-content-row:nth-child(2) {
+    margin-top: 6px;
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/* Phone Deposite */
+.phone-deposite {
+    position: absolute;
+    top: 100px;
+    left: -112px;
+    width: 174px;
+    padding: 14px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.phone-deposite__image {
+}
+
+.phone-deposite__title {
+    margin-left: 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.phone-deposite__numb {
+    margin-left: auto;
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+/* Phone Interest */
+.phone-interest {
+    position: absolute;
+    top: 115px;
+    right: -186px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #da6464;
+
+    color: #fff;
+}
+
+.phone-interest__numb {
+    font-size: 4.4rem;
+    font-weight: 600;
+    line-height: 6rem;
+}
+
+.phone-interest__title {
+    line-height: 2.2rem;
+}
+
+/* Phone SECURED */
+.phone-secured {
+    position: absolute;
+    bottom: 49px;
+    right: -86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 124px;
+    padding: 20px 15px 21px 14px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.phone-secured__icon {
+}
+
+.phone-secured__content {
+    color: #fff;
+}
+
+.phone-secured__content-numb {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.phone-secured__content-title {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    line-height: 1;
 }
