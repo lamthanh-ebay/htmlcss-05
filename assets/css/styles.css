@@ -105,6 +105,194 @@ h4 {
     line-height: 1.66;
 }
 
+/* Phone card */
+.phone-card {
+    width: 250px;
+    position: relative;
+    padding: 16px;
+    border-radius: 20px;
+    background: linear-gradient(76deg, #8679e4 11.52%, #7264d6 70.78%);
+    overflow: hidden;
+}
+
+.phone-card__main-balance {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.phone-card__main-balance::before,
+.phone-card__main-balance-icon-1::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.phone-card__main-balance::before {
+    background-color: #feef65;
+    right: 0;
+}
+
+.phone-card__main-balance-icon-1 {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fe6565;
+    overflow: hidden;
+}
+
+.phone-card__main-balance-icon-1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -16px;
+    background-color: #ffb228;
+}
+
+.phone-card__main-balance-text {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+.phone-card__main-balance-number {
+    margin-top: 2px;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.phone-card-info {
+    position: relative;
+    z-index: 1;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: flex-start;
+    gap: 5px 12px;
+}
+
+.phone-card-info__text {
+    color: #fff;
+}
+
+.phone-card-info__text:nth-child(1),
+.phone-card-info__text:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+}
+
+.phone-card-info__text:nth-child(3),
+.phone-card-info__text:nth-child(4) {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+.phone-card-info__decor {
+    position: absolute;
+}
+
+.phone-card-info__decor:nth-of-type(1) {
+    top: 0;
+    left: 0;
+}
+
+.phone-card-info__decor:nth-of-type(2) {
+    right: 0;
+    bottom: 0;
+}
+
+/* Phone card Large */
+.phone-card--large {
+    width: 482px;
+    padding: 38px;
+}
+
+.phone-card__main-balance--large {
+}
+
+.phone-card__main-balance--large::before,
+.phone-card__main-balance-icon-1--large::after {
+    width: 48px;
+    height: 48px;
+}
+
+.phone-card__main-balance--large::before {
+    background-color: #feef65;
+    right: 0;
+}
+
+.phone-card__main-balance-icon-1--large {
+    right: 32px;
+    width: 48px;
+    height: 48px;
+}
+
+.phone-card__main-balance-icon-1--large::after {
+    right: -32px;
+}
+
+.phone-card__main-balance-text--large {
+    position: relative;
+    z-index: 1;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+}
+
+.phone-card__main-balance-icon-1--large {
+}
+
+.phone-card__main-balance-number--large {
+    position: relative;
+    z-index: 1;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+}
+
+.phone-card-info--large {
+    margin-top: 103px;
+    gap: 4px 26px;
+}
+
+.phone-card-info__text--large:nth-child(1),
+.phone-card-info__text--large:nth-child(4) {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.7rem;
+}
+
+.phone-card-info__text--large:nth-child(2),
+.phone-card-info__text--large:nth-child(3) {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 3rem;
+    text-transform: initial;
+}
+
+.phone-card-info__decor--large:nth-of-type(1) {
+    top: 0;
+    left: 0;
+}
+
+.phone-card-info__decor--large:nth-of-type(2) {
+    right: 0;
+    bottom: 0;
+}
+
 /* Header */
 .header {
     position: sticky;
@@ -283,117 +471,6 @@ h4 {
     background: #3c2f60;
 }
 
-/* Phone card */
-.phone-card {
-    width: 250px;
-    position: relative;
-    padding: 16px;
-    border-radius: 20px;
-    background: linear-gradient(76deg, #8679e4 11.52%, #7264d6 70.78%);
-    overflow: hidden;
-}
-
-.phone-card__main-balance {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.phone-card__main-balance::before,
-.phone-card__main-balance-icon-1::after {
-    content: "";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-}
-
-.phone-card__main-balance::before {
-    background-color: #feef65;
-    right: 0;
-}
-
-.phone-card__main-balance-icon-1 {
-    position: absolute;
-    top: 0;
-    right: 16px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #fe6565;
-    overflow: hidden;
-}
-
-.phone-card__main-balance-icon-1::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: -16px;
-    background-color: #ffb228;
-}
-
-.phone-card__main-balance-text {
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-}
-
-.phone-card__main-balance-number {
-    margin-top: 2px;
-    color: #fff;
-    font-size: 2.2rem;
-    font-weight: 700;
-    line-height: 3rem;
-}
-
-.phone-card-info {
-    position: relative;
-    z-index: 1;
-    margin-top: 32px;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: flex-start;
-    gap: 5px 12px;
-}
-
-.phone-card-info__text {
-    color: #fff;
-}
-
-.phone-card-info__text:nth-child(1),
-.phone-card-info__text:nth-child(2) {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.4rem;
-    text-transform: uppercase;
-}
-
-.phone-card-info__text:nth-child(3),
-.phone-card-info__text:nth-child(4) {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.6rem;
-}
-
-.phone-card-info__decor {
-    position: absolute;
-}
-
-.phone-card-info__decor:nth-of-type(1) {
-    top: 0;
-    left: 0;
-}
-
-.phone-card-info__decor:nth-of-type(2) {
-    right: 0;
-    bottom: 0;
-}
-
 /* Phone Transactions */
 .phone-transactions {
     margin-top: 24px;
@@ -496,6 +573,58 @@ h4 {
     line-height: 1;
 }
 
+/* Phone card transaction Large */
+.phone-transaction__history--large {
+    position: absolute;
+    top: -48px;
+    right: -88px;
+    width: 276px;
+    margin-top: 0;
+    padding: 23px 13px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.phone-transaction__history-media--large {
+}
+
+.phone-transaction__history-media-icon--large {
+}
+
+.phone-transaction__history-content--large {
+}
+
+.phone-transaction__history-content-row--large {
+}
+
+.phone-transaction__history-content-type--large {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.phone-transaction__history-content-numb--large {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 400;
+}
+
+.phone-transaction__history-content-row--large {
+}
+
+.phone-transaction__history-content-sub-type--large {
+    font-family: Inter;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.phone-transaction__history-content-date--large {
+    font-family: Inter;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
 /* Phone Deposite */
 .phone-deposite {
     position: absolute;
@@ -590,7 +719,7 @@ h4 {
 
 /* Works */
 .works {
-    padding-top: 80px;
+    padding: 80px 0;
 }
 
 .works-wrap {
@@ -741,4 +870,109 @@ h4 {
     margin-top: 16px;
     color: var(--text-color);
     line-height: 1.75;
+}
+
+/* One card */
+.one-card {
+    padding: 80px 0;
+}
+
+.one-card-wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+/* One card content */
+.one-card-content {
+    width: 470px;
+    flex-shrink: 0;
+}
+
+.one-card-content__title {
+}
+
+.one-card-content__heading {
+    margin-top: 12px;
+}
+
+.one-card-content__desc {
+    margin-top: 20px;
+}
+
+.one-card-content__list {
+    margin-top: 28px;
+}
+
+.one-card-content__item {
+    position: relative;
+    margin-top: 18px;
+    padding-left: 24px;
+    color: var(--text-heading-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.one-card-content__item::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.one-card-content__cta {
+    margin-top: 38px;
+}
+
+/* One card media */
+.one-card-media {
+    position: relative;
+}
+
+/* One card invoice */
+.one-card-media__invoice {
+    position: absolute;
+    right: -88px;
+    bottom: -55px;
+    width: 120px;
+    padding: 15px;
+    border-radius: 16px;
+    color: #fff;
+    background: #439f90;
+}
+
+.one-card-media__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.one-card-media__icon {
+    width: 14.28px;
+    height: 14.28px;
+}
+
+.one-card-media__invoice-title {
+    margin-top: 14px;
+
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.one-card-media__invoice-numb {
+    margin-top: 6px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.5rem;
 }
