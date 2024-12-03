@@ -1465,3 +1465,129 @@ h4 {
 
 .app-content-download-item__icon {
 }
+
+/* Footer */
+.footer {
+    background: #fafbff;
+    padding-top: 100px;
+}
+
+.footer-wrap {
+    padding-bottom: 28px;
+}
+
+/* Footer content */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 403px;
+}
+
+/* Footer Logo */
+.footer-content__logo {
+}
+
+/* Footer Column */
+.footer-content__column {
+}
+
+.footer-content__column-title,
+.footer-form__label {
+    color: var(--text-heading-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+    margin-bottom: 24px;
+}
+
+/* Footer Nav */
+.footer-nav__list {
+}
+
+.footer-nav__item {
+}
+
+.footer-nav__item-link,
+.footer-content__column-desc {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    line-height: 2.4;
+    opacity: 0.75;
+}
+
+.footer-nav__item-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer DESC */
+.footer-content__column-desc {
+    max-width: 371px;
+    line-height: 2;
+}
+
+/* Footer Form */
+.footer-form {
+    margin-top: 48px;
+}
+
+.footer-form__label {
+    display: block;
+}
+
+.footer-form__group {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.footer-form__input {
+    width: 270px;
+    height: 52px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+    outline: none;
+    background-color: transparent;
+}
+
+.footer-form__input::placeholder {
+    color: #8e919a;
+    line-height: 1.75;
+    opacity: 0.7;
+}
+
+.footer-form__btn {
+    --height: 52px;
+
+    min-width: 113px;
+    border-radius: 6px;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Footer info */
+.footer-info {
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 100px;
+}
+
+.footer-info__text {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    line-height: 1.66;
+    text-decoration: underline;
+}
+
+/* Footer Copyright */
+.copyright {
+    padding: 28px 0;
+    text-align: center;
+    background: var(--primary-color);
+}
+
+.copyright-text {
+    color: #fff;
+    line-height: 1.75;
+}
